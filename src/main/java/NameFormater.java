@@ -8,13 +8,25 @@ public class NameFormater {
         return String.valueOf(cs);
     }
 
+    public static String getLengthString(String oriString, int length) {
+        String retString = oriString;
+        if (oriString.length() == length) {
+            return retString;
+        } else {
+            for (int i = 0; i < length - oriString.length(); i++) {
+                retString = "0" + retString;
+            }
+        }
+        return retString;
+    }
+
     public static void main(String[] args) {
-        String index = "S001";
-        String original = "string-to-integer-atoi";
+        int index = 47;
+        String original = "permutations-ii";
 
         String elems[] = original.split(Pattern.quote("-"));
 
-        StringBuilder name = new StringBuilder(index);
+        StringBuilder name = new StringBuilder("S" + getLengthString(String.valueOf(index), 4));
 
         for (String elem : elems) {
             name.append("_");

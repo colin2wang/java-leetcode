@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class S001_Two_Sum {
+public class S0001_Two_Sum {
 
     class Solution {
         public int[] twoSum(int[] nums, int target) {

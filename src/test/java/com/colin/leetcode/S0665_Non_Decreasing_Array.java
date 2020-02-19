@@ -3,7 +3,7 @@ package com.colin.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class S665_Non_Decreasing_Array {
+public class S0665_Non_Decreasing_Array {
 
     class Solution {
         public boolean checkPossibility(int[] nums) {

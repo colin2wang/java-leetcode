@@ -2,9 +2,7 @@ package com.colin.leetcode;
 
 import org.junit.Test;
 
-import java.util.List;
-
-public class S002_Add_Two_Numbers {
+public class S0002_Add_Two_Numbers {
 
     static class ListNode {
         int val;

@@ -3,7 +3,7 @@ package com.colin.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class S509_Fibonacci_Number {
+public class S0509_Fibonacci_Number {
 
     class Solution {
 //        public int fib(int n) {

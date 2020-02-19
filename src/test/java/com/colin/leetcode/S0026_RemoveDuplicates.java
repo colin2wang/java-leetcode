@@ -4,10 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
-public class S026_RemoveDuplicates {
+public class S0026_RemoveDuplicates {
 
     class Solution {
         public int removeDuplicates(int[] nums) {

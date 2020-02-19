@@ -3,7 +3,7 @@ package com.colin.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class S009_Palindrome_Number {
+public class S0009_Palindrome_Number {
 
     class Solution {
         public boolean isPalindrome(int x) {

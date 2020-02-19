@@ -3,10 +3,7 @@ package com.colin.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Stack;
-
-public class S007_Reverse_Integer {
+public class S0007_Reverse_Integer {
 
     class Solution {
         public int reverse(int x) {
