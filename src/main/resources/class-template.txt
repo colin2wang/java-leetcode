@@ -1,0 +1,12 @@
+package com.colin.leetcode;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class CLASS_NAME {
+
+    @Test
+    public void test() {
+
+    }
+}

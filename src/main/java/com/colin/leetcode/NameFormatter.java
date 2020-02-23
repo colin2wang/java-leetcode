@@ -1,6 +1,8 @@
+package com.colin.leetcode;
+import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class NameFormater {
+public class NameFormatter {
 
     public static String captureName(String str) {
         char[] cs = str.toCharArray();
@@ -18,21 +20,5 @@ public class NameFormater {
             }
         }
         return retString;
-    }
-
-    public static void main(String[] args) {
-        int index = 47;
-        String original = "permutations-ii";
-
-        String elems[] = original.split(Pattern.quote("-"));
-
-        StringBuilder name = new StringBuilder("S" + getLengthString(String.valueOf(index), 4));
-
-        for (String elem : elems) {
-            name.append("_");
-            name.append(captureName(elem));
-        }
-
-        System.out.println(name);
     }
 }
