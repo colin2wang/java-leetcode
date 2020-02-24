@@ -8,10 +8,10 @@ import java.util.function.IntConsumer;
 public class S1195_Fizz_Buzz_Multithreaded {
 
     class FizzBuzz {
-        Semaphore fizz = new Semaphore(0);
-        Semaphore buzz = new Semaphore(0);
-        Semaphore fizzbuzz = new Semaphore(0);
-        Semaphore number = new Semaphore(1);
+        private Semaphore fizz = new Semaphore(0);
+        private Semaphore buzz = new Semaphore(0);
+        private Semaphore fizzbuzz = new Semaphore(0);
+        private Semaphore number = new Semaphore(1);
 
         private int n;
         private volatile int idx = 1;
