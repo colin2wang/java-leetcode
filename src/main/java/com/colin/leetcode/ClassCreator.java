@@ -32,6 +32,10 @@ public class ClassCreator {
             ByteBuffer buffOut = ByteBuffer.wrap(fileContent.getBytes("utf-8"));
 
             RandomAccessFile outputFile = new RandomAccessFile(outputFilePath, "rw");
+            if (outputFile.length() > 0) {
+                System.out.println("File already exist. Exit...");
+                return;
+            }
             FileChannel outChannel = outputFile.getChannel();
             outChannel.write(buffOut);
 

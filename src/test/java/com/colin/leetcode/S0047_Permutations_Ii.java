@@ -6,11 +6,11 @@ import java.util.*;
 
 public class S0047_Permutations_Ii {
     class Solution {
-        protected void append(List<List<Integer>> sRet, List<Integer> root, List<Integer> rest) {
+        protected void append(List<List<Integer>> lRet, List<Integer> root, List<Integer> rest) {
             if (rest.size() == 1) {
                 List<Integer> copy = new ArrayList<>(root);
                 copy.add(rest.get(0));
-                sRet.add(copy);
+                lRet.add(copy);
             } else {
                 Set<Integer> all = new HashSet<>();
                 all.addAll(rest);
@@ -19,13 +19,13 @@ public class S0047_Permutations_Ii {
                     int idx = rest.indexOf(elem);
                     List<Integer> copy = new ArrayList<>(root);
                     copy.add(rest.get(idx));
-                    append(sRet, copy, subList(rest, idx));
+                    append(lRet, copy, subList(rest, idx));
                 }
 
 //                for (int idx = 0; idx < rest.size(); idx++) {
 //                    List<Integer> copy = new ArrayList<>(root);
 //                    copy.add(rest.get(idx));
-//                    append(sRet, copy, subList(rest, idx));
+//                    append(lRet, copy, subList(rest, idx));
 //                }
             }
         }
