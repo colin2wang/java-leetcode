@@ -7,6 +7,6 @@ public class CLASS_NAME {
 
     @Test
     public void test() {
-
+        Solution solution = new Solution();
     }
 }
