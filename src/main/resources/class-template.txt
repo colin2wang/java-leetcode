@@ -5,6 +5,10 @@ import org.junit.Test;
 
 public class CLASS_NAME {
 
+    class Solution {
+
+    }
+
     @Test
     public void test() {
         Solution solution = new Solution();
