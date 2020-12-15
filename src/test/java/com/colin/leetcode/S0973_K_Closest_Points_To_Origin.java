@@ -1,10 +1,9 @@
 package com.colin.leetcode;
 
-import javafx.beans.binding.ObjectExpression;
-import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.stream.Collectors;
 
 public class S0973_K_Closest_Points_To_Origin {
